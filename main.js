@@ -1,6 +1,6 @@
 // data source
 
-const url ="https://github.com/Humdinger93/TMT-Bets/blob/main/Data/CFB-FCS-Week-3-data.csv";
+const url ="https://raw.githubusercontent.com/Humdinger93/TMT-Bets/main/Data/CFB-FCS-Week-3-data.csv";
 
 
 // get data function 
