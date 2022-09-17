@@ -1,6 +1,6 @@
 // data source
 
-const url ="https://raw.githubusercontent.com/Humdinger93/TMT-Bets/main/Data/CFB-FCS-Week-3-data.csv";
+const url ="https://raw.githubusercontent.com/julia4ta/tutorials/master/Series%2002/Files/population_by_year.csv";
 
 
 // get data function 
