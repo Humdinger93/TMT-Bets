@@ -13,7 +13,7 @@ const response = await fetch(url);
 //process data
 const rawData = await response.text();
 //publish data
-document.getElementById("csv").innerHTML = rawData;
+//document.getElementById("csv").innerHTML = rawData;
 
 //developer info
 console.log(rawData);
