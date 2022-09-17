@@ -31,17 +31,17 @@ let jsonData = [];
 let i = 0;
 let j = 0;
 
-//for loop rows
-for (i=1;i < nOfRow - 1; i++) {
-    let obj = [];
-    let myNewLine = arrayOne[i].split(",");
-        //nested loop for columns
+    // for loop (rows)
+    for (i = 1; i < noOfRow - 1; i++) {
+        let obj = {};
+        let myNewLine = arrayOne[i].split(",");
+        // nested for loop (columns)
         for (j = 0; j < noOfCol; j++) {
             obj[header[j]] = myNewLine[j];
         };
-        //generate json
+        // generate JSON
         jsonData.push(obj);
-    }
+    };
 
 //publish data
 document.getElementById("json").innerHTML =jsonData;
