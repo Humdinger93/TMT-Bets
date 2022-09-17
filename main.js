@@ -44,7 +44,7 @@ for (i = 1; i < noOfRow - 1; i++) {
 };
 
 // publish data
-document.getElementById("json").innerHTML = jsonData;
+//document.getElementById("json").innerHTML = jsonData;
 
 // developer info
 console.log(jsonData);
