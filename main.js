@@ -22,34 +22,35 @@ console.log("rawData type: " + typeof rawData);
 //Part 2: CSV to JSON
 //credit: stavck overflow user "Paath" on 2016-05-07
 
-//initilize variables
+// initialize variables
 let arrayOne = rawData.split("\r\n");
 let header = arrayOne[0].split(",");
-let nOfRow = arrayOne.length;
+let noOfRow = arrayOne.length;
 let noOfCol = header.length;
 let jsonData = [];
 let i = 0;
 let j = 0;
 
-    // for loop (rows)
-    for (i = 1; i < noOfRow - 1; i++) {
-        let obj = {};
-        let myNewLine = arrayOne[i].split(",");
-        // nested for loop (columns)
-        for (j = 0; j < noOfCol; j++) {
-            obj[header[j]] = myNewLine[j];
-        };
-        // generate JSON
-        jsonData.push(obj);
+// for loop (rows)
+for (i = 1; i < noOfRow - 1; i++) {
+    let obj = {};
+    let myNewLine = arrayOne[i].split(",");
+    // nested for loop (columns)
+    for (j = 0; j < noOfCol; j++) {
+        obj[header[j]] = myNewLine[j];
     };
+    // generate JSON
+    jsonData.push(obj);
+};
 
-//publish data
-document.getElementById("json").innerHTML =jsonData;
+// publish data
+document.getElementById("json").innerHTML = jsonData;
 
-//Developer info
+// developer info
 console.log(jsonData);
 console.table(jsonData);
-console.log("jsonData type: " +typeof jsonData);
+console.log("jsonData type: " + typeof jsonData);
+
 
 
 
