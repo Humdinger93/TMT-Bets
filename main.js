@@ -51,7 +51,10 @@ console.log(jsonData);
 console.table(jsonData);
 console.log("jsonData type: " + typeof jsonData);
 
-
+//stringify
+jsonString= JSON.stringify(jsonData);
+console.log(jsonString);
+console.log("jsonString type: " +typeof jsonString);
 
 
 
